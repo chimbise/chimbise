@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="/login/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper" id="wrapper">
+    <form action="">
+      <h1>Login</h1>
+      <div class="input-box" id="phone">
+        <input type="tel" id="phoneNumberInput" placeholder="Phone Number" required>
+        <i class='bx bxs-phone'></i>
+      </div>
+      <div class="input-box" id="pass">
+        <input type="password" id="codeInput" placeholder="code">
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="remember-forgot">
+        <a href="#">change number</a>
+      </div>
+      <button type="submit" class="btn" id="login-button">get code</button>
+      <div class="register-link">
+        <p>Dont have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
+  </div>
+
+  <div class="grid-container">
+    <div class="start-application" style="background-color: gray;">start application</div>
+    <div class="affordability">affordability</div>
+    <div class="schedule" style="background-color: gray;">loan schedule</div>
+    <div class="my-loans" style="background-color: gray;">my loans</div>
+    <div class="wrapper2" id="wrapper2">
+      <form action="">
+        <h3>affordability</h3>
+        <div class="input-box-bs">
+          <input type="basic-salary" id="basic-salary" placeholder="Basic salary" required>
+        </div>
+        <div class="input-box-bs">
+          <input type="perm-allowance" id="perm-allowance1" placeholder="perm-allowance" >
+          <input type="perm-allowance" id="perm-allowance2" placeholder="perm-allowance" >
+          <input type="perm-allowance" id="perm-allowance3" placeholder="perm-allowance" >
+          <input type="perm-allowance" id="perm-allowance4" placeholder="perm-allowance" >
+          <input type="perm-allowance" id="perm-allowance5" placeholder="perm-allowance" >
+          <input type="perm-allowance" id="perm-allowance6" placeholder="perm-allowance" >
+          <input type="perm-allowance" id="perm-allowance7" placeholder="perm-allowance" >
+          <input type="perm-allowance" id="perm-allowance8" placeholder="perm-allowance" >
+        </div>
+        <div class="input-box-bs">
+          <input type="gross-income" id="gross-income" placeholder="gross-income" readonly>
+        </div>
+        <div class="input-box-bs">
+          <input type="deductions" id="deductions" placeholder="payslip deductions" required>
+          <input type="other-loans-not-reflecting" id="other-loans-not-reflecting" placeholder="other loans not reflecting" >
+          <input type="insurance-premiums-not-reflecting" id="insurance-premiums-not-reflecting" placeholder="insurance premiums not reflecting" >
+        </div>
+        <div class="input-box-bs">
+          <input type="adjusted-net-income" id="adjusted-net-income" placeholder="adjusted net income" readonly>
+        </div>
+        <div class="input-box-bs">
+          <input type="tax-correction" id="tax-correction" placeholder="tax correction" >
+          <input type="payslip-loans-to-be-settled" id="payslip-loans-to-be-settled" placeholder="installment of loans to be settled">
+        </div>
+        <div class="input-box-bs">
+          <input type="single-or-married" id="single-or-married" placeholder="Net take home single-or-married" >
+        </div>
+        <div class="input-box-bs">
+          <input type="maximum-installment" id="maximum-installment" placeholder="maximum installment" >
+        </div>
+       
+        <div class="remember-forgot">
+          <a href="#">change number</a>
+        </div>
+        <button type="submit" class="btn" id="check-button">get code</button>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="login.js"></script>
+</body>
+</html>
