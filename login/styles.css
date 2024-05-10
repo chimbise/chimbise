@@ -6,13 +6,37 @@
   }
   body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: url(/images/bgg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
   }
+  .back {
+    /* Basic styles */
+    display: none;
+    background-color: #007bff; /* Blue background color */
+    color: white; /* Text color */
+    border: none; /* Remove default button border */
+    padding: 5px 10px; /* Add padding to the button */
+    margin: 20px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 10px;
+    /* Add hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    /* Position the button */
+    position: absolute;
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.back:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
   .wrapper{
     display: none;
     width: 420px;
@@ -106,29 +130,42 @@
 
   .grid-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    grid-gap: 10px; /* Gap between grid items */    
+    grid-template-columns: repeat(1, 1fr); /* Two columns with equal width */
+    grid-gap: 20px; /* Gap between grid items */    
+    text-align: center;
     cursor: pointer;
+  }
+  .parent {
+    margin-top: 40px;
 
   }
-  .wrapper2{
-    display: none;
-    justify-content: center;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    color: #fff;
-    margin: 20px ;
-    border-radius: 12px;
-    
-  }
-  .wrapper2 .input-box-bs {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    width: 100%;
-  }
-  .item {
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-  }
+    .start-application{
+      border-radius: 15px;
+      padding: 10px;
+      background-color: whitesmoke;
+      transition: background-color 0.3s ease; /* Smooth transition */
+
+    }
+      .start-application:hover{
+        background-color: lightsteelblue;
+      }
+    .affordability{
+      border-radius: 15px;
+      padding: 10px;
+      background-color: grey;
+    }
+    .schedule{
+      border-radius: 15px;
+      padding: 10px;
+      background-color: whitesmoke;
+      transition: background-color 0.3s ease; /* Smooth transition */
+    }
+      .schedule:hover{
+        background-color: lightsteelblue;
+      }
+    .my-loans{
+      border-radius: 15px;
+      padding: 10px;
+      background-color: grey;
+    }
+ 

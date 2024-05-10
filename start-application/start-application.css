@@ -1,0 +1,26 @@
+.wrapper2{
+  display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    
+  }
+  .wrapper2 .input-box-bs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .wrapper2 .input-box-bs input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .prevNext{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }

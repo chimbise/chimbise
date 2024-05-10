@@ -19,6 +19,14 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 auth.languageCode = 'it';
 
+var back = document.getElementById('back')
+var gridContainer = document.getElementById('grid-container')
+back.addEventListener('click', ()=>{
+  gridContainer.style.display = 'grid'
+  document.getElementById('parent').innerHTML = '';   
+  back.style.display = 'none' 
+})
+
 window.recaptchaVerifier = new RecaptchaVerifier(auth, 'login-button', {
     'size': 'invisible',
     // 'callback': (response) => {
@@ -101,5 +109,27 @@ login.addEventListener('click', function(event) {
 });
 
 
+
+var startApplication = document.getElementById('start-application');
+startApplication.addEventListener('click', function(event){
+  loadNewContent('start-application/start-application');
+})
+var schedule = document.getElementById('schedule');
+schedule.addEventListener('click', function(event){
+  loadNewContent('loan-schedule/schedule');
+})
+
+function loadNewContent(container) {
+  // Fetch the new HTML file
+  gridContainer.style.display = 'none'
+  back.style.display = 'block'
+  fetch('/' + container + '.html')
+      .then(response => response.text())
+      .then(html => {
+          // Replace the content of the container with the new HTML
+          document.getElementById('parent').innerHTML = html;
+      })
+      .catch(error => console.error('Error loading new content:', error));
+}
 
 
